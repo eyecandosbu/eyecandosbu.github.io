@@ -1,9 +1,41 @@
+const productBtn = document.getElementById("product-btn");
+const dropdown = document.getElementById("product-dropdown");
+const allElements = document.body.children;
+
 $(document).ready(function () {
 	'use strict';
 
 
 	// Shuffle js filter and masonry
 	var containerEl = document.querySelector('.shuffle-wrapper');
+	productBtn.addEventListener("mouseenter", showProductDropdown);
+	productBtn.addEventListener("mouseleave", hideDropdown);
+	dropdown.addEventListener("mouseenter", showProductDropdown);
+	dropdown.addEventListener("mouseleave", hideDropdown);
+
+	
+	function showProductDropdown(){
+		dropdown.classList.add("active");
+		dropdown.classList.remove("hidden");
+		for (let i = 0; i < allElements.length; i++) {
+			const el = allElements[i];
+			if(!el.classList.contains("navigation")) {
+			  el.classList.add('blur');
+			}
+		}
+		
+	}
+
+	function hideDropdown() {
+		dropdown.classList.remove("active");
+		dropdown.classList.add("hidden");
+		for (let i = 0; i < allElements.length; i++) {
+			const el = allElements[i];
+			if(!el.classList.contains("navigation")) {
+			  el.classList.remove('blur');
+			}
+		}
+	}
 	if (containerEl) {
 		var Shuffle = window.Shuffle;
 		var myShuffle = new Shuffle(document.querySelector('.shuffle-wrapper'), {

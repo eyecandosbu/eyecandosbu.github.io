@@ -45,56 +45,33 @@ img {
 
 <!-- Header Start -->
 <header class="navigation">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<!-- header Nav Start -->
-				<nav class="navbar">
-					<div class="container-fluid">
-						<!-- Brand and toggle get grouped for better mobile display -->
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							</button>
-							<a class="navbar-brand" href="index.html">
-								<img src="images/eyecandologo.png" alt="Logo" width="60">
-							</a>
-						</div>
-						<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-							<ul class="nav navbar-nav navbar-right">
-								<li><a href="index.html">Home</a></li>
-								<li><a href="overview.html">Overview</a></li>
-								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Product<span class="ion-ios-arrow-down"></span></a>
-									<ul class="dropdown-menu">
-										<li><a href="download.html">Download</a></li>
-										<li><a href="demo.html">Demo</a></li>
-										<li><a href="terms.html">Terms and Conditions</a></li>
-										<li><a href="privacy.html">Privacy Policy</a></li>
-									</ul>
-								</li>	
-								<li><a href="publications.html">Publications</a></li>	
-								<li><a href="news.html">News</a></li>									
-								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="ion-ios-arrow-down"></span></a>
-									<ul class="dropdown-menu">
-										<li><a href="team.html">Team</a></li>
-										<li><a href="history.html">History</a></li>
-										<li><a href="contact.html">Contact</a></li>
-									</ul>
-								</li>
-							</ul>
-							</div><!-- /.navbar-collapse -->
-							</div><!-- /.container-fluid -->
-						</nav>
-					</div>
-				</div>
+	<nav>
+		<div id="navbar">
+			<a href="index.html">
+				<img src="images/Eyecando_noBackground.png" alt="Logo" width="50">
+			</a>
+			<a href="overview.html">Overview</a>
+			<a id="product-btn">Product</a>
+			<a href="news.html">News</a>
+			<a href="publications.html">Publications</a>						
+			<a href="team.html">Team</a>						
+			<a href="contact.html">Contact Us</a>
+		</div>
+		<div id="product-dropdown" class="hidden">
+			<div class="dropdown-item" id="dropdown-title">
+				<h3>Product</h3>
 			</div>
-</header><!-- header close -->
+			<div class="dropdown-item">
+				<a href="demo.html">Demo</a>
+				<p>our demo tutorial</p>
+			</div>
+			<div class="dropdown-item">
+				<a href="download.html">Download</a>
+				<p>start your dwell-free gaze-free workflow</p>
+			</div>
+		</div>
+	</nav>
+</header>
 
 <section>
   <div class="overlaycontainer">
@@ -311,15 +288,55 @@ img {
 
 <!-- footer Start -->
 <footer class="footer">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<p class="copyright">Copyright 2018-2023 &copy; <a href="http://eyecando.org">eyecando.org</a>. All rights reserved.
-				</p>
+	<div class="footer-container">
+		<div class="footer-nav">
+			<a href="index.html"><img src="images/Eyecando_noBackground.png" alt="footer-logo" width=50></a>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+			</ul>
+		</div>
+		<div class="footer-eyecando">
+			<div class="footer-title">
+				<h3>EyeCanDo</h3>
+			</div>
+			<ul>
+				<li><a>Product</a></li>
+				<li><a>Demo</a></li>
+				<li><a>Download</a></li>
+				<li><a>Our Team</a></li>
+				<li><a>Publications</a></li>
+			</ul>
+		</div>
+		<div class="footer-connect">
+			<div class="footer-title">
+				<h3>Connect With Us</h3>
+			</div>
+			<ul>
+				<li><button id="connect-btn">Connect</button></li>
+				<li><a>Instagram</a></li>
+				<li><a>Facebook</a></li>
+				<li><a>Youtube</a></li>
+				<li><a>LinkedIn</a></li>
+			</ul>
+		</div>
+		<div class="footer-copyright">
+			<div>
+				<ul>
+					<li>Copyright © 2025 EyeCanDo</li>
+					<li>All rights reserved</li>
+					<li> | </li>
+					<li> Privacy Policy</li>
+					<li> | </li>
+					<li> Terms of Use</li>
+				</ul>
+			</div>
+			<div class="location">
+				<ul>
+					<li>United States</li>
+				</ul>
 			</div>
 		</div>
 	</div>
-</footer>
 </footer>
 
     <!-- 
